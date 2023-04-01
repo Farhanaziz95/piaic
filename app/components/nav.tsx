@@ -5,9 +5,12 @@ import {
   Button,
   ButtonProps,
   Collapse,
+  Container,
   Flex,
+  HStack,
   Icon,
   IconButton,
+  Image,
   Link,
   Popover,
   PopoverContent,
@@ -45,69 +48,81 @@ export default function Header(props: ButtonProps) {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}>
-        <Flex
-          flex={{ base: 1, md: 'auto' }}
-          ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}>
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={'ghost'}
-            aria-label={'Toggle Navigation'}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          {/* <Text
+        <Container as={HStack} maxW={'6xl'}>
+
+          <Flex
+            flex={{ base: 1, md: 'auto' }}
+            ml={{ base: -2 }}
+            display={{ base: 'flex', md: 'none' }}>
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+              }
+              variant={'ghost'}
+              aria-label={'Toggle Navigation'}
+            />
+          </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+            {/* <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
             Logo
           </Text> */}
 
-          <Logo />
-          <Flex alignItems="center" display={{ base: 'none', md: 'flex' }} ml={10}>
-            <DesktopNav />
+            {/* <Logo /> */}
+
+            <Image src="/logo.svg"
+            position="absolute"
+            boxSize="100px" />
+
+            <Flex alignItems="center" display={{ base: 'none', md: 'flex' }} ml={24}>
+              <DesktopNav />
+
+              
+            </Flex>
+            
           </Flex>
-        </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}>
-          <Button
-            aria-label="Toggle Color Mode"
-            onClick={toggleColorMode}
-            _focus={{ boxShadow: 'none' }}
-            w="fit-content"
-            {...props}>
-            {colorMode === 'light' ? <BsMoonStarsFill /> : <BsSun />}
-          </Button>
+          <Stack
+                flex={{ base: 1, md: 0 }}
+                justify={''}
+                direction={'row'}
+                spacing={6}>
+                <Button
+                  aria-label="Toggle Color Mode"
+                  onClick={toggleColorMode}
+                  _focus={{ boxShadow: 'none' }}
+                  w="fit-content"
+                  {...props}>
+                  {colorMode === 'light' ? <BsMoonStarsFill /> : <BsSun />}
+                </Button>
 
-          <Button
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={400}
-            variant={'link'}
-            href={'#'}>
-            Sign In
-          </Button>
-          <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
-            href={'#'}
-            _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
-          </Button>
-        </Stack>
+                <Button
+                  as={'a'}
+                  fontSize={'sm'}
+                  fontWeight={400}
+                  variant={'link'}
+                  href={'https://portal.piaic.org/'}>
+                  Portal
+                </Button>
+                <Button
+                  as={'a'}
+                  display={{ base: 'none', md: 'inline-flex' }}
+                  fontSize={'sm'}
+                  fontWeight={600}
+                  color={'white'}
+                  bg={'green.400'}
+                  href={'https://portal.piaic.org/signup'}
+                  _hover={{
+                    bg: 'green.300',
+                  }}>
+                  Apply
+                </Button>
+              </Stack>
+        </Container>
+
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -123,7 +138,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack  direction={'row'} spacing={4}>
+    <Stack direction={'row'} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -269,42 +284,52 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+  
   {
-    label: 'Inspiration',
+    label: 'Home',
+    href:"#",
+  },
+  {
+    label: 'About',
+    href:"#",
+  },
+  {
+    label: 'Available Programs',
     children: [
       {
-        label: 'Explore Design Work',
+        label: 'Artificial Intelligence',
         subLabel: 'Trending Design to inspire you',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
+        label: 'Cloud Native & Mobile Web Computing',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Blockchain',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Internet Of Things',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+      {
+        label: 'Web 3.0 & Metaverse Developer',
         subLabel: 'Up-and-coming Designers',
         href: '#',
       },
     ],
   },
+  
   {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Learn Design',
+    label: 'How It Works',
     href: '#',
   },
   {
-    label: 'Hire Designers',
+    label: 'WIT',
     href: '#',
   },
 ];
