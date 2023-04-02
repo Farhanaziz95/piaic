@@ -245,10 +245,10 @@ export default function TopFooter() {
                     <SocialButton label={'Twitter'} href={'#'}>
                         <FaTwitter />
                     </SocialButton>
-                    <SocialButton label={'YouTube'} href={'#'}>
+                    <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UC2Makv_pLAtvrjHNgg-pBLg'}>
                         <FaYoutube />
                     </SocialButton>
-                    <SocialButton label={'Instagram'} href={'#'}>
+                    <SocialButton label={'Instagram'} href={'https://www.facebook.com/groups/piaic/'}>
                         <FaInstagram />
                     </SocialButton>
                 </Stack>
