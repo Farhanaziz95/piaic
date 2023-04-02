@@ -74,7 +74,8 @@ export default function Header(props: ButtonProps) {
 
             <Image src="/logo.svg"
             position="absolute"
-            boxSize="100px" />
+            boxSize="100px"
+            alt='main logo' />
 
             <Flex alignItems="center" display={{ base: 'none', md: 'flex' }} ml={24}>
               <DesktopNav />
