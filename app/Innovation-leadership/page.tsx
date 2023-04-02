@@ -1,7 +1,7 @@
 'use client'
 
 import { Box, Card, CardBody, CardHeader, Container, Flex, Heading, Link, SimpleGrid, Stack, chakra, useBreakpointValue } from '@chakra-ui/react'
-import { Cardz, EmptyCard, LineWithDot } from '../components/test'
+import { Cardz, EmptyCard, LineWithDot } from '../components/timelinestyledprops'
 
 import Header from '../components/nav'
 import HowItWork from '../components/howitwork'
