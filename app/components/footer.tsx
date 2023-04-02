@@ -16,7 +16,7 @@ import {
     chakra,
     useColorModeValue,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import { BiMailSend } from 'react-icons/bi';
 import { ReactNode } from 'react';
@@ -242,14 +242,17 @@ export default function TopFooter() {
                 align={{ base: 'center', md: 'center' }}>
                 <Text color={useColorModeValue('gray.900', 'gray.50')}>© 2023 Nth-x-Solutions. All rights reserved</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Twitter'} href={'#'}>
+                    <SocialButton label={'Twitter'} href={'https://twitter.com/piaicofficial'}>
                         <FaTwitter />
                     </SocialButton>
                     <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UC2Makv_pLAtvrjHNgg-pBLg'}>
                         <FaYoutube />
                     </SocialButton>
-                    <SocialButton label={'Instagram'} href={'https://www.facebook.com/groups/piaic/'}>
+                    <SocialButton label={'Instagram'} href={'https://www.instagram.com/piaicofficial'}>
                         <FaInstagram />
+                    </SocialButton>
+                    <SocialButton label={'Facebook'} href={'https://www.facebook.com/groups/piaic'}>
+                        <FaFacebookF />
                     </SocialButton>
                 </Stack>
             </Container>
