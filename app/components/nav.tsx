@@ -298,27 +298,27 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: 'Artificial Intelligence',
-        subLabel: 'Trending Design to inspire you',
+        subLabel: 'AI program in Data Science, Machine Learning, and Deep Learning.',
         href: '/AI/',
       },
       {
         label: 'Cloud Native & Mobile Web Computing',
-        subLabel: 'Up-and-coming Designers',
+        subLabel: 'The New Era Of Microservices & Multi-Cloud Native Computing.',
         href: '/Cloud/',
       },
       {
         label: 'Blockchain',
-        subLabel: 'Up-and-coming Designers',
+        subLabel: 'The New Era Of Blockchain, Fintech & Smart Contract',
         href: '/Blockchain/',
       },
       {
         label: 'Internet Of Things',
-        subLabel: 'Up-and-coming Designers',
+        subLabel: 'The New Era Of Internet Of Things & AI',
         href: '/IOT/',
       },
       {
         label: 'Web 3.0 & Metaverse Developer',
-        subLabel: 'Up-and-coming Designers',
+        subLabel: 'the Next Generation of the Internet',
         href: 'https://panaverse-dao-syllabus-nu.vercel.app/',
       },
     ],
