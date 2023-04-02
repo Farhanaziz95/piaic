@@ -1,4 +1,4 @@
-import { Box, Flex, Image, List, ListItem, Stack, Text, chakra } from '@chakra-ui/react';
+import { Box, Flex, Image, List, ListItem, Stack, Text, chakra, useColorModeValue } from '@chakra-ui/react';
 
 export default function HowItWork() {
     return (
@@ -29,11 +29,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Sequence.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
                         PIAIC will launch classes in the following locations, one city at a time, in the following order.
                     </Text>
 
@@ -77,11 +77,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Requirements.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
                         To participate in the program and become eligible for the most prestigious credentials for AI, <br /> Cloud and Blockchain technologies in the world, students must complete the following process
                     </Text>
 
@@ -93,10 +93,10 @@ export default function HowItWork() {
 
                 >
                     <List>
-                        <ListItem>1- Signup at PIAIC Portal.</ListItem>
-                        <ListItem>2- Submit the online application.</ListItem>
-                        <ListItem>3- Pass the entrance exam which consists of multiple choice English and Mathematics questions. Results are determined based on percentile.</ListItem>
-                        <ListItem>4- Pass all PIAIC exams with an average score of at least 70%.</ListItem>
+                        <ListItem color={useColorModeValue('gray.500', 'gray.300')}>1- Signup at PIAIC Portal.</ListItem>
+                        <ListItem color={useColorModeValue('gray.500', 'gray.300')}>2- Submit the online application.</ListItem>
+                        <ListItem color={useColorModeValue('gray.500', 'gray.300')}>3- Pass the entrance exam which consists of multiple choice English and Mathematics questions. Results are determined based on percentile.</ListItem>
+                        <ListItem color={useColorModeValue('gray.500', 'gray.300')}>4- Pass all PIAIC exams with an average score of at least 70%.</ListItem>
                     </List>
                 </Flex>
 
@@ -124,11 +124,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Program <br /> Structure.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
                         All programs are one year long in duration. Each program is divided into four quarters <br />
                         (12 weeks each). Classes are held once a week. In the initial stages, classes will be held <br />
                         only on Sundays. There will 6 sections of classes available, including Artificial Intelligence, <br />
@@ -162,11 +162,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Fee Structure and <br /> Distance Learning Option.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
 
                         Those students who wish to participate in the program online can check the distance learning <br />
                         option in the application form. Please note that distance learning students must also take<br />
@@ -204,11 +204,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Payment & <br />Accountability.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
                         Please note, all fees will be collected by Saylani Welfare Trust, the most trusted NGO <br /> in Pakistan. Saylani has strict audit processes already in place to ensure proper accountability of funds.
                     </Text>
 
@@ -238,11 +238,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Certification <br /> Selection.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text  fontSize="md" color={useColorModeValue('gray.500', 'gray.300')} ml={12}>
                         Please note, this is a highly prestigious program. Due to the high level of difficulty, <br /> only 10% of students will be awarded the PIAIC certifications.
                     </Text>
 
@@ -271,11 +271,11 @@ export default function HowItWork() {
 
                     </Flex>
 
-                    <Text fontSize="xl">
+                    <Text color={useColorModeValue('black', 'white')} fontSize="xl">
 
                         Admissions and Technical<br /> Support Contact Information.
                     </Text>
-                    <Text fontSize="md" color="gray.500" ml={12}>
+                    <Text color={useColorModeValue('gray.500', 'gray.300')} fontSize="md" ml={12}>
                         For questions related to admissions, you may call us on the PIAIC Helpline: +92-308-2220203 <br /> between 10 AM - 6 PM.
                         Please note we are closed on Fridays.<br />
                         For technical questions related to coursework, <br />you may contact us via email at education@piaic.org.

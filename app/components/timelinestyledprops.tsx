@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   Flex,
   HStack,
   Text,
@@ -38,7 +37,7 @@ export const Cardz = ({ id, title, description, date }: CardProps) => {
     <HStack
       flex={1}
       p={{ base: 3, sm: 6 }}
-      bg={useColorModeValue('gray.100', 'gray.800')}
+      bg={useColorModeValue('gray.100', 'gray.500')}
       spacing={5}
       rounded="lg"
       alignItems="center"
@@ -47,7 +46,7 @@ export const Cardz = ({ id, title, description, date }: CardProps) => {
         content: `""`,
         w: '0',
         h: '0',
-        borderColor: `transparent ${useColorModeValue('#edf2f6', '#1a202c')} transparent`,
+        borderColor: `transparent ${useColorModeValue('gray.100', 'gray.500')} transparent`,
         borderStyle: 'solid',
         borderWidth: borderWidthValue,
         position: 'absolute',
@@ -57,15 +56,15 @@ export const Cardz = ({ id, title, description, date }: CardProps) => {
       }}
     >
       <Box>
-        <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}>
+        <Text fontSize="lg" color={isEvenId ? useColorModeValue('green.500', 'green.300') : useColorModeValue('blue.500', 'blue.300')}>
           {date}
         </Text>
 
         <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+          <chakra.h1 color={useColorModeValue('black', 'white')} fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
             {title}
           </chakra.h1>
-          <Text fontSize="md">{description}</Text>
+          <Text color={useColorModeValue('gray.500', 'gray.300')} fontSize="md">{description}</Text>
         </VStack>
       </Box>
     </HStack>

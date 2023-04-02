@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, chakra } from '@chakra-ui/react';
+import { Box, chakra, useColorModeValue } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
 const videos = [
@@ -81,7 +81,7 @@ const VideoList: React.FC<{ videos: any; onVideoSelect: Function }> = ({ videos,
         {videos.map((video: any) => (
             <div key={video.id} style={{ display: 'flex', alignItems: 'center', padding: '10px', cursor: 'pointer' }} onClick={() => onVideoSelect(video.videoId)}>
                 <img src={video.thumbnail} alt={video.title} style={{ width: '120px', marginRight: '10px' }} />
-                <div>{video.title} <br />{video.date} </div>
+                <Box color={useColorModeValue('gray.500', 'gray.300')} >{video.title} <br />{video.date} </Box>
 
             </div>
         ))}
@@ -94,11 +94,15 @@ const VideoSection: React.FC = () => {
     return (
         <>
             <chakra.h1
-                textAlign='center'
-                fontSize={36}
+                color={useColorModeValue("black", "white")}
+                pb={8}
+                fontSize={'5xl'}
+                textAlign="center"
+                fontWeight='bold'
                 py='4'>Videos</chakra.h1>
 
             <chakra.p
+                color={useColorModeValue('gray.500', 'gray.300')}
                 textAlign='center'
                 fontSize={17}
                 pb="6">it's a treasure trove of PIAIC's finest moments! From their launch event covered by PTV to an interview with Zia Khan on Bol News, these videos showcase the organization's commitment to providing free education to all. And if you're looking for some inspiration to get started, look no further than their intro video, which will have you feeling motivated and ready to learn in no time. So grab some popcorn, settle in, and get ready to be blown away by the incredible work PIAIC is doing.</chakra.p>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, HStack, Image, Link, chakra } from '@chakra-ui/react'
+import { Box, HStack, Image, Link, chakra,useColorModeValue } from '@chakra-ui/react'
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
 
 import Header from '../components/nav'
@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <Box
+            <Box  bg={useColorModeValue('white', 'gray.700')}
                 py={20}
                 px="12"
                 alignSelf={'center'}
@@ -29,12 +29,13 @@ export default function Home() {
                     alt='Dan Abramov'
                 />
                 <chakra.h2
+                 color={useColorModeValue('black', 'white')}
                 fontSize={36}>
                     Dr. Arif Alvi
                 </chakra.h2>
                 <chakra.p
                 fontSize={12}
-                color='blackAlpha.700'
+                color={useColorModeValue('blackAlpha.500', 'gray.300')}
                 >President of the Islamic Republic of Pakistan</chakra.p>
                 <HStack
                 spacing={8}
@@ -54,7 +55,7 @@ export default function Home() {
 
                 </HStack>
 
-                <chakra.p>Dr. Arif Alvi was sworn in as the 13th President of Islamic Republic of Pakistan on 9th September 2018.
+                <chakra.p  color={useColorModeValue('gray.500', 'gray.300')}>Dr. Arif Alvi was sworn in as the 13th President of Islamic Republic of Pakistan on 9th September 2018.
                     <br />
                     <br />
                     Dr. Arif Alvi was born in 1949 and completed his early education in Karachi. He did his Bachelor of Dental Surgery (BDS) from De’ Montmorency College of Dentistry, Lahore where he was declared the “Best Graduate”. He completed his Masters of Science in the field of Prosthodontics from University of Michigan (1975) and in Orthodontics from University of Pacific, San Francisco (1982). He was awarded fellowship ‘Diplomatic American Board of Orthodontists (1995)’.

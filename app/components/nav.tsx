@@ -30,7 +30,6 @@ import {
   HamburgerIcon,
 } from '@chakra-ui/icons';
 
-import Logo from './logo'
 
 export default function Header(props: ButtonProps) {
   const { isOpen, onToggle } = useDisclosure();

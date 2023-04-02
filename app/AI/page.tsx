@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Card, CardBody, CardHeader, Container, Flex, Heading, Link, SimpleGrid, Stack, chakra, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Card, CardBody, CardHeader, Container, Flex, Heading, Link, SimpleGrid, Stack, chakra, useBreakpointValue, useColorModeValue } from '@chakra-ui/react'
 import { Cardz, EmptyCard, LineWithDot } from '../components/timelinestyledprops'
 
 import Header from '../components/nav'
@@ -13,155 +13,89 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
     return (
         <>
-            <Header />
-            <Flex
-                bg="#edf3f8"
-                _dark={{
-                    bg: "#3e3e3e",
-                }}
-                // p={50}
-                w="full"
-                alignItems="center"
-                justifyContent="center"
-            >
+            <Box bg={useColorModeValue('white', 'gray.800')}>
+                <Header />
                 <Flex
-                    justify="center"
-                    bg="white"
-                    _dark={{
-                        bg: "gray.800",
-                    }}
+                    bg={useColorModeValue('white', 'gray.800')}
+                    // p={50}
                     w="full"
+                    alignItems="center"
+                    justifyContent="center"
                 >
-                    <Box
-                        w={{
-                            base: "full",
-                            md: "75%",
-                            lg: "50%",
-                        }}
-                        px={4}
-                        py={20}
-                        textAlign={{
-                            base: "left",
-                            md: "center",
-                        }}
+                    <Flex
+                        justify="center"
+                        bg={useColorModeValue('white', 'gray.800')}
+                        w="full"
                     >
-                        <chakra.span
-                            fontSize={{
-                                base: "3xl",
-                                sm: "4xl",
+                        <Box
+                            w={{
+                                base: "full",
+                                md: "75%",
+                                lg: "50%",
                             }}
-                            fontWeight="extrabold"
-                            letterSpacing="tight"
-                            lineHeight="shorter"
-                            color="gray.900"
-                            _dark={{
-                                color: "gray.100",
+                            px={4}
+                            py={20}
+                            textAlign={{
+                                base: "left",
+                                md: "center",
                             }}
-                            mb={6}
                         >
-                            <chakra.span display="block">Artificial Intelligence</chakra.span>
                             <chakra.span
-                                fontSize={'xl'}
-                                display="block"
-                                color="brand.600"
-                                _dark={{
-                                    color: "gray.500",
+                                fontSize={{
+                                    base: "3xl",
+                                    sm: "4xl",
                                 }}
+                                fontWeight="extrabold"
+                                letterSpacing="tight"
+                                lineHeight="shorter"
+                                color={useColorModeValue('gray.900', 'gray.100')}
+                                
+                                mb={6}
                             >
-                                A ONE YEAR AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. <br />
-                                GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI.
+                                <chakra.span display="block">Artificial Intelligence</chakra.span>
+                                <chakra.span
+                                    fontSize={'xl'}
+                                    display="block"
+                                    color={useColorModeValue('brand.600', 'gray.500')}
+                                >
+                                    A ONE YEAR AI PROGRAM DESIGNED FOR ABSOLUTE BEGINNERS. <br />
+                                    GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI.
+                                </chakra.span>
                             </chakra.span>
-                        </chakra.span>
+                        </Box>
+                    </Flex>
+                </Flex>;
+
+                <Box bg={useColorModeValue('white', 'gray.800')}
+                    p={10}>
+                    <Box bg={useColorModeValue('white', 'gray.800')}>
+                        <chakra.p
+                            color={useColorModeValue('black', 'white')}
+                            pb={8}
+                            fontSize={'5xl'}
+                            textAlign="center"
+                            fontWeight='bold'>Program Structure</chakra.p>
+                        <chakra.p
+                        color={useColorModeValue('brand.600', 'gray.500')}
+                            pb={8}
+                            fontSize={'2xl'}
+                            textAlign="center"
+                            fontWeight='medium'>A four-quarter AI program in Data Science, Machine Learning, and Deep Learning.</chakra.p>
                     </Box>
-                </Flex>
-            </Flex>;
 
-            <Box
-                p={10}>
-                <Box>
+
                     <chakra.p
-                        pb={8}
-                        fontSize={'5xl'}
-                        textAlign="center"
-                        fontWeight='bold'>Program Structure</chakra.p>
-                    <chakra.p
+                        color={useColorModeValue('black', 'white')}
                         pb={8}
                         fontSize={'2xl'}
-                        textAlign="center"
-                        fontWeight='medium'>A four-quarter AI program in Data Science, Machine Learning, and Deep Learning.</chakra.p>
-                </Box>
-
-
-                <chakra.p
-                    pb={8}
-                    fontSize={'2xl'}
-                    fontWeight='bold'>Technical Track</chakra.p>
-                <SimpleGrid columns={[1, 2, 4]} spacing='40px'>
-                    <Card boxShadow={"2xl"} variant={'elevated'}>
-                        <CardHeader>
-                            <Heading size='md'> {'Quarter 1'}</Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <chakra.p>AI Foundations</chakra.p>
-                        </CardBody>
-                    </Card>
-                    <Card boxShadow={"2xl"} variant={'elevated'}>
-                        <CardHeader>
-                            <Heading size='md'> {'Quarter 2'}</Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <chakra.p>Introduction to Data Science & Deep Learning</chakra.p>
-                        </CardBody>
-                    </Card>
-                    <Card boxShadow={"2xl"} variant={'elevated'}>
-                        <CardHeader>
-                            <Heading size='md'> {'Quarter 3'}</Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <chakra.p>Deploying AI Solutions</chakra.p>
-                        </CardBody>
-                    </Card>
-                    <Card boxShadow={"2xl"} variant={'elevated'}>
-                        <CardHeader>
-                            <Heading size='md'> {'Quarter 4'}</Heading>
-                        </CardHeader>
-                        <CardBody>
-                            <chakra.p>AI In Practice</chakra.p>
-                        </CardBody>
-                    </Card>
-                </SimpleGrid>
-            </Box>
-
-            <Box
-                p={10}
-            >
-
-
-                <Box
-
-                    as='a'
-                    href='/Innovation-leadership/'
-                >
-                    <chakra.p
-                        pb={8}
-                        fontSize={'2xl'}
-                        fontWeight='bold'>Compulsory Innovation Track</chakra.p>
+                        fontWeight='bold'>Technical Track</chakra.p>
                     <SimpleGrid columns={[1, 2, 4]} spacing='40px'>
-                        <Card boxShadow={"2xl"} variant={'elevated'}>
-                            <chakra.img
-                                src='/em.gif'
-                                w={'150px'}
-                                h={'150px'}
-                                alignSelf='center'
-                            />
-
-                        </Card>
                         <Card boxShadow={"2xl"} variant={'elevated'}>
                             <CardHeader>
                                 <Heading size='md'> {'Quarter 1'}</Heading>
                             </CardHeader>
                             <CardBody>
-                                <chakra.p>Innovation Methodologies</chakra.p>
+                                <chakra.p>AI Foundations</chakra.p>
                             </CardBody>
                         </Card>
                         <Card boxShadow={"2xl"} variant={'elevated'}>
@@ -169,7 +103,7 @@ export default function Home() {
                                 <Heading size='md'> {'Quarter 2'}</Heading>
                             </CardHeader>
                             <CardBody>
-                                <chakra.p>Infrastructure As Code and DevOps</chakra.p>
+                                <chakra.p>Introduction to Data Science & Deep Learning</chakra.p>
                             </CardBody>
                         </Card>
                         <Card boxShadow={"2xl"} variant={'elevated'}>
@@ -177,19 +111,81 @@ export default function Home() {
                                 <Heading size='md'> {'Quarter 3'}</Heading>
                             </CardHeader>
                             <CardBody>
-                                <chakra.p>Lean UI/UX and Bot Design</chakra.p>
+                                <chakra.p>Deploying AI Solutions</chakra.p>
+                            </CardBody>
+                        </Card>
+                        <Card boxShadow={"2xl"} variant={'elevated'}>
+                            <CardHeader>
+                                <Heading size='md'> {'Quarter 4'}</Heading>
+                            </CardHeader>
+                            <CardBody>
+                                <chakra.p>AI In Practice</chakra.p>
                             </CardBody>
                         </Card>
                     </SimpleGrid>
                 </Box>
+
+                <Box
+                    bg={useColorModeValue('white', 'gray.800')}
+                    p={10}
+                >
+
+
+                    <Box
+                        bg={useColorModeValue('white', 'gray.800')}
+                        as='a'
+                        href='/Innovation-leadership/'
+                    >
+                        <chakra.p
+                            color={useColorModeValue('black', 'white')}
+                            pb={8}
+                            fontSize={'2xl'}
+                            fontWeight='bold'>Compulsory Innovation Track</chakra.p>
+                        <SimpleGrid columns={[1, 2, 4]} spacing='40px'>
+                            <Card boxShadow={"2xl"} variant={'elevated'}>
+                                <chakra.img
+                                    src='/em.gif'
+                                    w={'150px'}
+                                    h={'150px'}
+                                    alignSelf='center'
+                                />
+
+                            </Card>
+                            <Card boxShadow={"2xl"} variant={'elevated'}>
+                                <CardHeader>
+                                    <Heading size='md'> {'Quarter 1'}</Heading>
+                                </CardHeader>
+                                <CardBody>
+                                    <chakra.p>Innovation Methodologies</chakra.p>
+                                </CardBody>
+                            </Card>
+                            <Card boxShadow={"2xl"} variant={'elevated'}>
+                                <CardHeader>
+                                    <Heading size='md'> {'Quarter 2'}</Heading>
+                                </CardHeader>
+                                <CardBody>
+                                    <chakra.p>Infrastructure As Code and DevOps</chakra.p>
+                                </CardBody>
+                            </Card>
+                            <Card boxShadow={"2xl"} variant={'elevated'}>
+                                <CardHeader>
+                                    <Heading size='md'> {'Quarter 3'}</Heading>
+                                </CardHeader>
+                                <CardBody>
+                                    <chakra.p>Lean UI/UX and Bot Design</chakra.p>
+                                </CardBody>
+                            </Card>
+                        </SimpleGrid>
+                    </Box>
+                </Box>
+
+                <Box>
+                    <Milestones />
+                </Box>
+
+
+                <TopFooter />
             </Box>
-
-            <Box>
-                <Milestones />
-            </Box>
-
-
-            <TopFooter />
         </>
     )
 }
@@ -269,8 +265,8 @@ const Milestones = () => {
     const isDesktop = useBreakpointValue({ base: false, md: true });
 
     return (
-        <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
-            <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
+        <Container bg={useColorModeValue('white', 'gray.800')} maxWidth="7xl" p={{ base: 2, sm: 10 }}>
+            <chakra.h3 color={useColorModeValue('black', 'white')} fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
                 Detailed Program Structure
             </chakra.h3>
             {milestones.map((milestone) => (

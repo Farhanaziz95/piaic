@@ -1,16 +1,13 @@
 "use client";
 
-import { Box, Button, Flex, Image, SimpleGrid, chakra } from '@chakra-ui/react'
+import { Box, useColorModeValue, Flex, Image, SimpleGrid, chakra } from '@chakra-ui/react'
 
 import React from 'react'
 
 export default function Achivements() {
     return (
         <Flex
-            bg="#edf3f8"
-            _dark={{
-                bg: "#3e3e3e",
-            }}
+        bg={useColorModeValue('white', 'gray.700')}
             // p={20}
             w="full"
             justifyContent="center"
@@ -41,10 +38,8 @@ export default function Achivements() {
                         base: "center",
                         md: "center",
                     }}
-                    color="gray.900"
-                    _dark={{
-                        color: "gray.400",
-                    }}
+                    color={useColorModeValue("black","white")}
+
                     lineHeight={{
                         md: "shorter",
                     }}
@@ -81,10 +76,7 @@ export default function Achivements() {
                                 base: "center",
                                 md: "left",
                             }}
-                            color="gray.900"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue("black","white")}
                             lineHeight={{
                                 md: "shorter",
                             }}
@@ -98,10 +90,7 @@ export default function Achivements() {
                                 base: "center",
                                 sm: "left",
                             }}
-                            color="gray.600"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue('gray.500', 'gray.300')}
                             fontSize={{
                                 md: "lg",
                             }}
@@ -150,10 +139,7 @@ export default function Achivements() {
                                 base: "center",
                                 md: "left",
                             }}
-                            color="gray.900"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue("black","white")}
                             lineHeight={{
                                 md: "shorter",
                             }}
@@ -166,10 +152,7 @@ export default function Achivements() {
                                 base: "center",
                                 sm: "left",
                             }}
-                            color="gray.600"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue('gray.500', 'gray.300')}
                             fontSize={{
                                 md: "lg",
                             }}
@@ -210,10 +193,7 @@ export default function Achivements() {
                                 base: "center",
                                 md: "left",
                             }}
-                            color="gray.900"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue("black","white")}
                             lineHeight={{
                                 md: "shorter",
                             }}
@@ -227,10 +207,7 @@ export default function Achivements() {
                                 base: "center",
                                 sm: "left",
                             }}
-                            color="gray.600"
-                            _dark={{
-                                color: "gray.400",
-                            }}
+                            color={useColorModeValue('gray.500', 'gray.300')}
                             fontSize={{
                                 md: "lg",
                             }}
