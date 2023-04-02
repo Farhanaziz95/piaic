@@ -1,45 +1,5 @@
 import { Box, Container, Flex, HStack, Image, List, ListItem, Stack, Text, VStack, chakra } from '@chakra-ui/react';
 
-const overviewList = [
-    {
-        id: 1,
-        label: '',
-        subLabel: ''
-    },
-    {
-        id: 2,
-        label: 'Requirements.',
-        subLabel: ''
-    },
-    {
-        id: 3,
-        label: 'Program Structure.',
-        subLabel: 'All programs are one year long in duration. Each program is divided into four quarters (12 weeks each). Classes are held once a week. In the initial stages, classes will be held only on Sundays. There will 6 sections of classes available, including Artificial Intelligence, Cloud Native and Mobile Web Computing, Blockchain, Internet of Things, 5G and Software Defined Networking and Quantum Computing . Each class will be 3 hours in duration per week, for a total of 36 hours per quarter or 144 hours for the entire year.'
-    },
-    {
-        id: 4,
-        label: 'Program Duration and Structure.',
-        subLabel: 'All programs are one year long in duration. Each program is divided into four quarters (12 weeks each). Classes are held once a week. In the initial stages, classes will be held only on Sundays. There will 6 sections of classes available, including Artificial Intelligence, Cloud Native and Mobile Web Computing, Blockchain, Internet of Things, 5G and Software Defined Networking and Quantum Computing . Each class will be 3 hours in duration per week, for a total of 36 hours per quarter or 144 hours for the entire year.'
-    },
-    {
-        id: 2,
-        label: 'Payment and Accountability.',
-        subLabel: 'Please note, all fees will be collected by Saylani Welfare Trust, the most trusted NGO in Pakistan. Saylani has strict audit processes already in place to ensure proper accountability of funds.'
-    },
-    {
-        id: 2,
-        label: 'Certification Selection',
-        subLabel: 'Please note, this is a highly prestigious program. Due to the high level of difficulty, only 10% of students will be awarded the PIAIC certifications.'
-    },
-    {
-        id: 2,
-        label: 'Admissions and Technical Support Contact Information.',
-        subLabel: `For questions related to admissions, you may call us on the PIAIC Helpline: +92-308-2220203 between 10 AM - 6 PM.
-        Please note we are closed on Fridays.
-        For technical questions related to coursework, you may contact us via email at education@piaic.org.`
-    },
-];
-
 export default function HowItWork() {
     return (
         <>

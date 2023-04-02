@@ -193,19 +193,19 @@ export default function TopFooter() {
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Company</ListHeader>
-                        <Link href={'#'}>About us</Link>
-                        <Link href={'#'}>How It Works</Link>
-                        <Link href={'#'}>WIT</Link>
+                        <Link href={'/About/'}>About us</Link>
+                        <Link href={'/howitwork/'}>How It Works</Link>
+                        <Link href={'/WIT/'}>WIT</Link>
                         <Link href={'https://portal.piaic.org/signup'}>Apply</Link>
                         <Link href={'https://portal.piaic.org/'}>Student Portal</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Programs</ListHeader>
-                        <Link href={'#'}>Artificial Intelligence</Link>
-                        <Link href={'#'}>Cloud Native & Mobile Web Computing</Link>
-                        <Link href={'#'}>Blockchain</Link>
-                        <Link href={'#'}>Internet Of Things</Link>
-                        <Link href={'#'}>Web 3.0 & Metaverse Developer</Link>
+                        <Link href={'/AI/'}>Artificial Intelligence</Link>
+                        <Link href={'/Cloud/'}>Cloud Native & Mobile Web Computing</Link>
+                        <Link href={'/Blockchain'}>Blockchain</Link>
+                        <Link href={'/IOT/'}>Internet Of Things</Link>
+                        <Link href={'https://panaverse-dao-syllabus-nu.vercel.app/'}>Web 3.0 & Metaverse Developer</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Stay up to date</ListHeader>

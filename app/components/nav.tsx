@@ -287,11 +287,11 @@ const NAV_ITEMS: Array<NavItem> = [
   
   {
     label: 'Home',
-    href:"#",
+    href:"/",
   },
   {
     label: 'About',
-    href:"#",
+    href:"/About/",
   },
   {
     label: 'Available Programs',
@@ -299,37 +299,37 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Artificial Intelligence',
         subLabel: 'Trending Design to inspire you',
-        href: '#',
+        href: '/AI/',
       },
       {
         label: 'Cloud Native & Mobile Web Computing',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/Cloud/',
       },
       {
         label: 'Blockchain',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/Blockchain/',
       },
       {
         label: 'Internet Of Things',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/IOT/',
       },
       {
         label: 'Web 3.0 & Metaverse Developer',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: 'https://panaverse-dao-syllabus-nu.vercel.app/',
       },
     ],
   },
   
   {
     label: 'How It Works',
-    href: '#',
+    href: '/howitwork/',
   },
   {
     label: 'WIT',
-    href: '#',
+    href: '/WIT/',
   },
 ];
