@@ -139,44 +139,101 @@ TRAINING INNOVATION LEADERS WITH A COMBINATION OF DIFFERENT LEADERSHIP STYLES TO
 const milestones = [
     {
       id: 1,
-      date: 'MARCH 30, 2022',
+      date: '1A',
       title: 'Chakra Hackathon',
       description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que travailler avec du texte lisible et contenant du sens.`
     },
     {
       id: 2,
-      date: 'July 30, 2021',
+      date: '1B',
       title: 'Open Source, first contribution',
       description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating to improve technology for everyone, Ahmad's world changed again!.`
     },
     {
       id: 3,
-      date: 'July 30, 2018',
+      date: '1C',
       title: 'Freelancing, started working for myself',
       description:
         'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
     },
     {
       id: 4,
-      date: 'July 30, 2018',
+      date: '1D',
       title: 'Freelancing, started working for myself',
       description:
         'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
     },
     {
       id: 5,
-      date: 'July 30, 2018',
+      date: '2A',
       title: 'Freelancing, started working for myself',
       description:
         'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
     },
     {
       id: 6,
-      date: 'July 30, 2018',
+      date: '2B',
       title: 'Freelancing, started working for myself',
       description:
         'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
-    }
+    },
+    {
+        id:7,
+        date: '2C',
+        title: 'Freelancing, started working for myself',
+        description:
+          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+      },
+      {
+        id: 8,
+        date: '2D',
+        title: 'Freelancing, started working for myself',
+        description:
+          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+      },
+      {
+        id: 9,
+        date: '2E',
+        title: 'Freelancing, started working for myself',
+        description:
+          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+      },
+      {
+        id: 10,
+        date: '2F',
+        title: 'Freelancing, started working for myself',
+        description:
+          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+      },
+      {
+        id: 11,
+        date: '2G',
+        title: 'Real-time monitoring through Prometheus',
+        description:
+          'In this sub module, the student will learn how to use Prometheus as a systems monitoring and alerting toolkit. The student will learn that Prometheus works well for recording any purely numeric time series. It fits both machine-centric monitoring as well as monitoring of highly dynamic service-oriented architectures. In a world of microservices, its support for multi-dimensional data collection and querying is a particular strength.'
+      },
+      {
+        id: 12,
+        date: '3A',
+        title: 'Lean UX',
+        description:
+          'The junction of Lean Startup and User Experience-based (UX) design and their symbiotic coexistence—is Lean UX. We will learn how the underlying principles of Lean Startup apply to Lean UX. Lean UX provides a prescriptive framework for building better products, moving design away from pixel perfection, toward iterative learning, smarter effort, and outcome-based results. The focus is that the product managers, business owners, team members and startup employees—along with designers— learn from Lean UX.'
+      },
+      {
+        id: 13,
+        date: '3B',
+        title: 'Designing and Prototyping Content for Websites and Mobile Apps',
+        description:
+          'This sub module covers the material required by the creative professionals and UI/UX designers seeking the fastest, easiest, most comprehensive way to learn to develop content for websites and mobile apps. We will go through multiple project-based lessons which will take you step-by-step through key techniques in UI/UX design using different tools. The student will set up a project, create graphics, add images and text, organize content, and work with symbols and libraries.'
+      },
+      {
+        id: 14,
+        date: '3C',
+        title: 'Designing Bots: Creating Conversational Experiences',
+        description:
+          'New conversational apps are revolutionizing the way we interact with software. This practical sub module shows you how to design and build great conversational experiences and delightful bots that help people be more productive, whether it’s for a new consumer service or an enterprise efficiency product. The student will learn how to use an effective onboarding process, outline different flows, define a bot personality, and choose the right balance of rich control and text.'
+      },
+    
   ];
   
   const Milestones = () => {
