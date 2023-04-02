@@ -51,6 +51,7 @@ export default function HowItWork() {
                         minH={'30vh'}
                         src="/hiw.png"
                         rounded="lg"
+                        alt='nice picture to look good'
 
                     />
                 </Flex>

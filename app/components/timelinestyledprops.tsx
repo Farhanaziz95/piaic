@@ -56,7 +56,7 @@ export const Cardz = ({ id, title, description, date }: CardProps) => {
       }}
     >
       <Box>
-        <Text fontSize="lg" color={isEvenId ? useColorModeValue('green.500', 'green.300') : useColorModeValue('blue.500', 'blue.300')}>
+        <Text fontSize="lg" color={useColorModeValue(isEvenId ?'green.500' : 'blue.500',isEvenId ?'green.300' : 'blue.300') }>
           {date}
         </Text>
 

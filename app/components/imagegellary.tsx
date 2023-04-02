@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import { AnimationDefinition, motion, useMotionValueEvent } from "framer-motion";
 import { Photo, PhotoAlbum, RenderContainer, RenderPhoto, RenderRowContainer } from "react-photo-album";
-
+import { Image } from '@chakra-ui/react';
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Lightbox from "yet-another-react-lightbox";
 import React from "react";
@@ -446,8 +446,8 @@ const renderPhoto: RenderPhoto<Image> = ({ layout, layoutOptions, imageProps: { 
     whileTap={{ scale: 0.9 }}
     animate="visible"
   >
-    <img
-
+    <Image
+      alt='gallery Image'
       style={{ ...style, width: "100%", padding: 0 }} {...restImageProps} />
   </motion.div>
 );

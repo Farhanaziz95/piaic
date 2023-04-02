@@ -53,7 +53,7 @@ export default function Home() {
                 </Text>{' '}
               </Heading>
               <Text fontSize={{ base: 'md', lg: 'lg' }} color={useColorModeValue('gray.500', 'gray.300')}>
-                The project board is an exclusive resource for contract work. It's
+                The project board is an exclusive resource for contract work. Its
                 perfect for freelancers, agencies, and moonlighters.
               </Text>
 
@@ -84,7 +84,7 @@ export default function Home() {
 
               The Women Inclusion in Technology project is the largest initiative on women education in Pakistan. The main of the project is to drive female participation in the technology industry in Pakistan from less than 5% to 30% over the next two years. Via this project, PIAIC is propagating awareness and training on the latest, most state-of-the-art technologies to women in Pakistan. The Women Empowerment Division will aid highly skilled women in technology to establish themselves as entrepreneurs and leaders in the technology industry not only in Pakistan but also around the world.
             </Text>
-            =
+            
           </Stack>
         </Container>
 

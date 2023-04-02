@@ -179,11 +179,13 @@ export default function TopFooter() {
                             <HStack>
                                 <Image
                                     src='/panacloud.svg'
-                                    boxSize="150px" />
+                                    boxSize="150px"
+                                    alt='panacloud logo' />
 
                                 <Image
                                     src='/saylani.png'
-                                    width="150px" />
+                                    width="150px"
+                                    alt='saylani Logo' />
                             </HStack>
                         </Box>
                         {/* <Text fontSize={'sm'}>

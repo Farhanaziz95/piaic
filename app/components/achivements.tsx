@@ -101,7 +101,8 @@ export default function Achivements() {
                     </Box>
                     
                         <Image
-                        src='/mile1.jpg'/>
+                        src='/mile1.jpg'
+                        alt='launching Website'/>
                     
                 </SimpleGrid>
                 <SimpleGrid
@@ -162,7 +163,8 @@ export default function Achivements() {
 
                     </Box>
                     <Image
-                        src='/mile2.jpg'/>
+                        src='/mile2.jpg'
+                        alt='First Official Meeting'/>
                 </SimpleGrid>
                 <SimpleGrid
                     alignItems="start"
@@ -217,7 +219,8 @@ export default function Achivements() {
 
                     </Box>
                     <Image
-                        src='/mile3.jpg'/>
+                        src='/mile3.jpg'
+                        alt='meeting with chief'/>
                 </SimpleGrid>
             </Box>
         </Flex>
