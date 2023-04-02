@@ -88,7 +88,7 @@ export default function Home() {
                         pb={8}
                         fontSize={'2xl'}
                         textAlign="center"
-                        fontWeight='medium'>Four Quarters of Blockchain Course Work</chakra.p>
+                        fontWeight='medium'>A four-quarter cloud computing program.</chakra.p>
                 </Box>
 
 
@@ -102,7 +102,7 @@ export default function Home() {
                             <Heading size='md'> {'Quarter 1'}</Heading>
                         </CardHeader>
                         <CardBody>
-                            <chakra.p>Foundations of Blockchain</chakra.p>
+                            <chakra.p>Cloud Native Computing Foundations</chakra.p>
                         </CardBody>
                     </Card>
                     <Card boxShadow={"2xl"} variant={'elevated'}>
@@ -110,7 +110,7 @@ export default function Home() {
                             <Heading size='md'> {'Quarter 2'}</Heading>
                         </CardHeader>
                         <CardBody>
-                            <chakra.p>Smart Contract Development</chakra.p>
+                            <chakra.p>Developing Cloud Native Microservices</chakra.p>
                         </CardBody>
                     </Card>
                     <Card boxShadow={"2xl"} variant={'elevated'}>
@@ -118,7 +118,7 @@ export default function Home() {
                             <Heading size='md'> {'Quarter 3'}</Heading>
                         </CardHeader>
                         <CardBody>
-                            <chakra.p>Dapp Development</chakra.p>
+                            <chakra.p>Kubernetes in Practice</chakra.p>
                         </CardBody>
                     </Card>
                     <Card boxShadow={"2xl"} variant={'elevated'}>
@@ -126,7 +126,7 @@ export default function Home() {
                             <Heading size='md'> {'Quarter 4'}</Heading>
                         </CardHeader>
                         <CardBody>
-                            <chakra.p>Advanced Blockchain Topics</chakra.p>
+                            <chakra.p>AWS Application Development</chakra.p>
                         </CardBody>
                     </Card>
                 </SimpleGrid>
