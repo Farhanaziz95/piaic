@@ -140,70 +140,75 @@ const milestones = [
     {
       id: 1,
       date: '1A',
-      title: 'Chakra Hackathon',
-      description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que travailler avec du texte lisible et contenant du sens.`
+      title: 'Design Thinking',
+      description: `Combining Design Thinking, Lean Startup, Agile, and DevOps for Innovation Innovation doesn’t just happen. It requires an iterative, experimental approach (Source: Gartner):
+      Use Design Thinking to Understand the Customer and Discover the Real Need
+      Evolve the Innovation Using Lean Startup
+      Use Agile to Build Out and Evolve the Technology Elements of the Innovation
+      Use DevOps for Continuous Integration
+      DevOps is a process required for innovation, and is a technology value stream that is required to convert a business hypothesis into a technology enabled service that delivers value to the customer. The value stream begins when an engineer checks in a change in a version control system and ends when the change successfully runs in production, providing value to the customer. The goal is to have testing and operations happening simultaneously with design/development, enabling fast flow and high quality.`
     },
     {
       id: 2,
       date: '1B',
-      title: 'Open Source, first contribution',
-      description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating to improve technology for everyone, Ahmad's world changed again!.`
+      title: 'Design Thinking to Understand the Customer',
+      description: `In this sub module, we will learn to create something new in a rapidly changing world. We will learn how to design digital and physical products, services, business models, and business ecosystems. We take an in-depth understanding of the design thinking process and learn that in order to succeed, we usually need a (customer) need; an interdisciplinary team; the right mindset; and the necessary leeway for experimentation, creativity, and the courage to question what exists.`
     },
     {
       id: 3,
       date: '1C',
-      title: 'Freelancing, started working for myself',
+      title: 'Lean Startup to Evolve the Innovation',
       description:
-        'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+        'In The Lean Startup, Eric Ries lays out his vision for how to ensure that the ideas that have the most value get the most resources. The method Ries promotes relies on experimentation, rapid iteration of ideas, and evolutionary processes. This Build-Measure-Learn feedback loop is used to develop the minimum viable product. In this sub module, we will learn how to evolve the innovation into something that the customers desire'
     },
     {
       id: 4,
       date: '1D',
-      title: 'Freelancing, started working for myself',
+      title: 'Preparing for the PMI Agile Certified Practitioner (PMI-ACP)',
       description:
-        'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+        'The PMI-ACP is most significant qualification in the domain of project delivery—not just for leaders and managers, but also for agile and innovation practitioners and team members. In this sub module, we will cover the material required to pass the PMI-ACP certification exam and become experts in Agile methodologies.'
     },
     {
       id: 5,
       date: '2A',
-      title: 'Freelancing, started working for myself',
+      title: 'Introduction to Linux and Bash using Python',
       description:
-        'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+        'Linux containers are poised to take over the world; we will start our course with an introduction of Linux and the command line. For many non-technical people, the command line (also referred to as CLI, Terminal, bash, or shell) is a place of mystery. However, you only have to know a handful of basic commands to start feeling comfortable. In this module we will cover the basic commands to get you started.'
     },
     {
       id: 6,
       date: '2B',
-      title: 'Freelancing, started working for myself',
+      title: 'Docker Deep Dive',
       description:
-        'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+        'This course provides a soup-to-nuts learning experience for core Docker technologies, including the Docker Engine, Images, Containers, Registries, Networking, Storage, and more. All of the behind the scenes theory is explained, and all concepts are clearly demonstrated on the command line. No prior knowledge of Docker or Linux is required.'
     },
     {
         id:7,
         date: '2C',
-        title: 'Freelancing, started working for myself',
+        title: 'Implementing Agile using Jira',
         description:
-          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+          'Jira supports any agile project management methodology for software development. In this sub module, we will learn to implement Scrum methodology using Jira.'
       },
       {
         id: 8,
         date: '2D',
-        title: 'Freelancing, started working for myself',
+        title: 'Continuous Integration and Continuous Delivery using Jenkins',
         description:
-          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+          'In the sub module, we will learn how to use Jenkins as an extensible automation server and turn it into the continuous delivery hub for any software project.'
       },
       {
         id: 9,
         date: '2E',
-        title: 'Freelancing, started working for myself',
+        title: 'Agentless IT automation using Ansible',
         description:
-          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+          'In this sub module, we will learn Ansible, which is a universal language that unravels the mystery of how work gets done. We will learn how it turns tough tasks into repeatable playbooks and how to roll out enterprise-wide protocols with the push of a button.'
       },
       {
         id: 10,
         date: '2F',
-        title: 'Freelancing, started working for myself',
+        title: 'Manage any Cloud, Infrastructure, or Service using Terraform',
         description:
-          'Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.'
+          'We will learn how to safely and predictably create, change, and improve infrastructure using Terraform. How it enables users to define and provision a datacenter infrastructure using a high-level configuration language.'
       },
       {
         id: 11,
