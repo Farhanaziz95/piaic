@@ -1,4 +1,4 @@
-import { Box, Container, Flex, HStack, Image, List, ListItem, Stack, Text, VStack, chakra } from '@chakra-ui/react';
+import { Box, Flex, Image, List, ListItem, Stack, Text, chakra } from '@chakra-ui/react';
 
 export default function HowItWork() {
     return (
